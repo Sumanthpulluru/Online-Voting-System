@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>ONLINE VOTING SYSTEM REGISTRATION</title>
+        <link rel="stylesheet" href="../css/stylesheet.css">
+    </head>
+    <body>
+        <style>
+            #address{
+                width: 30%;
+                border-color: black;
+            }
+            #vg{
+                border:2px solid rgb(0, 0, 0);
+                border-radius: 5px;
+                padding: 5px;
+                width:30%;
+
+            }
+            
+        </style>
+        <div id="headersection">
+            <h1>VCE STUDENT ONLINE VOTING SYSTEM</h1>
+        </div>
+        <hr>
+        <div id="bodysection">
+            <h3>REGISTRATION</h3>
+            <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+                <input type="number" name='rollnumber'placeholder="ENTER ROLL NUMBER"><br><br>
+                <input type="text" name="name"placeholder="NAME">
+                <input type="number" name='mobile'placeholder="MOBILE"><br><br>
+                <input type="password" name='password'placeholder="PASSWORD"><br><br>
+                <input type="password" name='cpass'placeholder="CONFIRM PASSWORD"><br><br>
+                <input id="address" type="text" name='address'placeholder="                                                ADDRESS"><br><br>
+                <center>
+                    <div id="imagepart">
+                    Upload Image: <input type="file"name="photo">
+                    </div><br>
+                
+                
+                <div id="vg">
+                Select Role:<select style="border-radius: 2px;border-color: black;" name="role">
+                    <option value='1'>voter</option>
+                    <option value="2">group</option>
+                    <option value="3">admin</option>
+                </select>
+            </div><br><br>
+                <button id="loginbutton"> Register</button><br><br>
+                Already user? <a href="../index.html" style="color:rgb(243, 137, 16);">login here</ahref>
+                </center>
+            </form>
+        </div>
+    </body>
+</html>

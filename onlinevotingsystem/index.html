@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>ONLINE VOTING SYSTEM</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body style=" background-image: url('uploads/ece.jpg');background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;">
+        <style>
+            #bodysection{
+                border: 2px solid rgb(1, 14, 13);
+                 width: 30%;
+                 float: center;
+                 background-color: #cee5d0;
+                 background-blend-mode:multiply;
+                 color:crimson;
+                
+            }
+        </style>
+        <center>
+        <div id="headersection" style="color:crimson; background-color: #cee5d0;
+        background-blend-mode:multiply; width:60%;">
+            <h1>VCE STUDENT ONLINE VOTING SYSTEM</h1>
+            
+        </div>
+    </center>
+        <hr>
+        <div id='logo'>
+            <img  src="uploads/logo.jpeg" height="150" width="150" >
+        </div>
+        <div id='logo' style="padding: 10px;">
+            <img align="left" src="uploads/vote1.jpeg" height="400" width="500" >
+            <img  align="right" src="uploads/voice.jpeg" height="400" width="500" >
+        </div>
+        <center>
+        <div id="bodysection" >
+            
+            <form action="api/login.php" method="POST">
+                <h3>Login</h3>
+                <input type="number" name="rollnumber" placeholder="ENTER ROLLNUMBER"><br><br>
+                <input type="password" name="password" placeholder="ENTER PASSWORD"><br><br>
+                <select id="dropbox" name="role">
+                    <option value='1'>voter</option>
+                    <option value='2'>group</option>
+                    <option value='3'>admin</option>
+                </select><br><br>
+                <button id="loginbutton" type="submit"> login</button><br><br>
+                New user? <a href="routes/register.html" style="color:rgb(243, 137, 16);">Register Here</a>
+            </form>
+            
+        </div>
+       </center>
+        
+    </body>
+</html>

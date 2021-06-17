@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    background-color:peachpuff;
+    color:crimson;
+
+}
+#headersection{
+    padding: 10px;
+}
+input{
+    
+    padding: 10px;
+    border-radius: 5px;
+
+}
+#dropbox{
+    border: 2px solid rgb(0, 5, 5);
+    padding: 10px;
+    border-radius: 5px;
+    width: 18%;
+   
+}
+#loginbutton{
+    background-color:blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: black;
+
+}
+#imagepart{
+    border: 2px solid rgb(1, 14, 13);
+    border-radius: 5px;
+    padding: 5px;
+    width:30%;
+    text-align: center;
+}
